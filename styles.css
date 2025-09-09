@@ -17,7 +17,7 @@
   text-decoration: none;
 }
 
-h1, h2, button, a {
+h1, h2, button, a, dt {
   font-family: "Nova Square", sans-serif;
 }
 
@@ -179,41 +179,6 @@ h2 {
   }
 }
 
-.split {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  list-style-position: inside;
-  gap: 2rem;
-
-  .buy {
-    border-radius: 2rem;
-    border: 3px solid var(--primary);
-    padding: 2rem;
-
-    li {
-      list-style: none;
-    }
-
-    ul {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    dd {
-      font-family: "Tektur", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-  }
-
-  .tokenomics {
-    padding: 2rem;
-    background: black;
-    border-radius: 2rem;
-    border: 3px solid var(--accent);
-  }
-}
 
 .roadmap {
   margin: 5rem auto;
@@ -254,6 +219,33 @@ footer {
   border: 3px solid var(--secondary);
   display: flex;
   justify-content: center;
+}
+
+.tokenomics {
+  text-align: center;
+  color: var(--secondary);
+  margin: 5rem auto;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    list-style: none;
+    /* color: white; */
+
+    li {
+      /* background: var(--secondary); */
+      border: 2px solid var(--secondary);
+      padding: 1rem;
+      border-radius: 1rem;
+
+      dt {
+        margin-bottom: 0;
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -329,5 +321,11 @@ footer {
 
   .contract {
     width: 35px !important;
+  }
+
+  .tokenomics {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
