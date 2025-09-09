@@ -58,20 +58,6 @@ nav {
 
 }
 
-nav.second {
-  background: url('./assets/02.jpg') !important;
-  background-blend-mode: normal !important;
-
-  .logo {
-    color: var(--secondary);
-  }
-
-  div > .whitepaper {
-    background: var(--secondary);
-    color: white;
-  }
-}
-
 .logo {
   color: white;
   font-size: 3rem;
